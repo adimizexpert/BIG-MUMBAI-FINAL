@@ -1,0 +1,132 @@
+{
+  "name": "Big Mumbai - India's Premier Gaming Platform",
+  "short_name": "Big Mumbai",
+  "description": "Big Mumbai is India's leading gaming platform offering interactive challenges, real-time community chat, and amazing rewards.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#7c3aed",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-IN",
+  "categories": ["games", "entertainment", "social"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play Games",
+      "short_name": "Games",
+      "description": "Start playing Big Mumbai games",
+      "url": "/games",
+      "icons": [
+        {
+          "src": "/icons/games-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Join Community",
+      "short_name": "Community",
+      "description": "Connect with Big Mumbai community",
+      "url": "/community",
+      "icons": [
+        {
+          "src": "/icons/community-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Win Rewards",
+      "short_name": "Rewards",
+      "description": "Check your Big Mumbai rewards",
+      "url": "/rewards",
+      "icons": [
+        {
+          "src": "/icons/rewards-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Big Mumbai Gaming Platform - Desktop View"
+    },
+    {
+      "src": "/screenshots/mobile-1.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Big Mumbai Gaming Platform - Mobile View"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.bigmumbai.game",
+      "id": "com.bigmumbai.game"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/big-mumbai/id1234567890"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
