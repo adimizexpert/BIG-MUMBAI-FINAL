@@ -7,14 +7,8 @@ import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '#home' },
-  { name: 'Games', href: '#games' },
-  { name: 'How to Play', href: '#how-to-login' },
-  { name: 'Bonuses', href: '#bonuses' },
   { name: 'FAQ', href: '#faq' },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
-  { name: 'Terms of Service', href: '/terms-of-service' },
   { name: 'Disclaimer', href: '/disclaimer' }
 ];
 

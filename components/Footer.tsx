@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Mail, MapPin, Gamepad2 } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">B</span>
+                <Gamepad2 className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-bold">Big Mumbai Game</span>
             </div>
@@ -39,12 +39,9 @@ export default function Footer() {
               <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><a href="#home" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Home</a></li>
-                <li><a href="#games" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Games</a></li>
-                <li><a href="#how-to-login" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">How to Play</a></li>
-                <li><a href="#bonuses" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Bonuses</a></li>
-                <li><a href="#faq" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">FAQ</a></li>
                 <li><a href="/about" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">About</a></li>
                 <li><a href="/contact" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Contact</a></li>
+                <li><a href="/blogs" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Blogs</a></li>
                 <li><a href="/privacy-policy" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Privacy Policy</a></li>
                 <li><a href="/terms-of-service" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Terms of Service</a></li>
                 <li><a href="/disclaimer" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Disclaimer</a></li>
@@ -70,12 +67,8 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-green-500" />
-                <span className="text-gray-400">+91-8000-123-456</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <span className="text-gray-400">support@bigmumbaiwin.com</span>
+                <span className="text-gray-400">info@bigmumbaiwin.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-red-500 mt-1" />

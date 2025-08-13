@@ -3,7 +3,7 @@
   "/page": "app/page.js",
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
+  "/terms-of-service/page": "app/terms-of-service/page.js",
   "/disclaimer/page": "app/disclaimer/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js",
-  "/terms-of-service/page": "app/terms-of-service/page.js"
+  "/privacy-policy/page": "app/privacy-policy/page.js"
 }
