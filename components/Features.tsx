@@ -1,138 +1,48 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Gamepad2, MessageCircle, Trophy, Zap, Shield, Users, Clock, Gift } from 'lucide-react';
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
 
 export default function Features() {
-  const features = [
-    {
-      icon: Gamepad2,
-      title: 'Interactive Play Modes',
-      description: 'Choose from 100+ exciting games including puzzles, strategy, and action-packed challenges.',
-      color: 'bg-blue-100 text-blue-600',
-    },
-    {
-      icon: MessageCircle,
-      title: 'Real-Time Community Chat',
-      description: 'Connect with players nationwide. Share strategies, make friends, and build your gaming network.',
-      color: 'bg-green-100 text-green-600',
-    },
-    {
-      icon: Trophy,
-      title: 'Amazing Rewards & Prizes',
-      description: 'Win daily prizes, seasonal tournaments, and exclusive rewards worth lakhs of rupees.',
-      color: 'bg-yellow-100 text-yellow-600',
-    },
-    {
-      icon: Zap,
-      title: 'Instant Play Technology',
-      description: 'No downloads required. Play instantly on any device with our optimized web platform.',
-      color: 'bg-purple-100 text-purple-600',
-    },
-    {
-      icon: Shield,
-      title: '100% Safe & Secure',
-      description: 'Your data and transactions are protected with bank-level security and encryption.',
-      color: 'bg-red-100 text-red-600',
-    },
-    {
-      icon: Users,
-      title: 'Active Gaming Community',
-      description: 'Join 500K+ active players from across India in our vibrant gaming ecosystem.',
-      color: 'bg-indigo-100 text-indigo-600',
-    },
-    {
-      icon: Clock,
-      title: '24/7 Available',
-      description: 'Play anytime, anywhere. Our platform is always ready for your gaming sessions.',
-      color: 'bg-teal-100 text-teal-600',
-    },
-    {
-      icon: Gift,
-      title: 'Daily Bonuses',
-      description: 'Get daily login bonuses, special event rewards, and exclusive member benefits.',
-      color: 'bg-orange-100 text-orange-600',
-    },
-  ];
-
   return (
-    <section id="games" className="py-20 bg-gray-50">
+    <section id="games" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-red-600 font-semibold text-lg">✨ Platform Features</span>
+          <span className="text-blue-600 font-semibold text-lg">🎮 Platform Features</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
             Big Mumbai Games & Features
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Experience the ultimate gaming platform designed for Indian players. 
-            Here's what makes us the #1 choice for online entertainment.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card 
-                key={index} 
-                className="h-full hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-0 shadow-lg"
-              >
-                <CardHeader>
-                  <div className={`w-16 h-16 rounded-2xl ${feature.color} flex items-center justify-center mb-4`}>
-                    <Icon className="w-8 h-8" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-gray-900">
-                    {feature.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-gray-600 text-base leading-relaxed">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-
-        {/* Feature Highlights */}
-        <div className="mt-20">
-          <div className="bg-gradient-to-r from-blue-900 to-purple-900 rounded-3xl p-8 md:p-12 text-white">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                  Ready to Start Your Gaming Journey?
-                </h3>
-                <p className="text-xl text-blue-100 mb-8">
-                  Join thousands of players who are already enjoying the excitement, 
-                  building friendships, and winning amazing rewards every day.
+        {/* About Big Mumbai Game Paragraph */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                Experience the Ultimate Gaming Platform
+              </h3>
+              <div className="text-lg md:text-xl text-gray-700 leading-relaxed space-y-4">
+                <p>
+                  <strong className="text-blue-600">Big Mumbai Game</strong> is India's premier online gaming platform that brings you an unparalleled gaming experience. 
+                  Our platform features over 100+ exciting games including color prediction, lottery, casino games, fishing, and the popular Aviator game, 
+                  all designed to provide maximum entertainment and winning opportunities.
                 </p>
-                <div className="grid grid-cols-2 gap-6">
-                  <div>
-                    <div className="text-3xl font-bold text-yellow-400">500K+</div>
-                    <div className="text-blue-200">Happy Players</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-yellow-400">₹10L+</div>
-                    <div className="text-blue-200">Rewards Given</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-yellow-400">100+</div>
-                    <div className="text-blue-200">Games Available</div>
-                  </div>
-                  <div>
-                    <div className="text-3xl font-bold text-yellow-400">24/7</div>
-                    <div className="text-blue-200">Support</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-center lg:text-right">
-                <div className="inline-block bg-white/10 backdrop-blur-md rounded-2xl p-8">
-                  <h4 className="text-2xl font-bold mb-4">Special Launch Offer!</h4>
-                  <div className="text-4xl font-bold text-yellow-400 mb-2">₹500</div>
-                  <div className="text-blue-200 mb-6">Welcome Bonus for New Players</div>
-                  <div className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-3 px-6 rounded-xl cursor-pointer transition-all duration-300 inline-block">
-                    Claim Your Bonus Now! 🎁
-                  </div>
-                </div>
+                
+                <p>
+                  What sets us apart is our commitment to creating a vibrant gaming community where players can connect, compete, and win together. 
+                  With real-time chat features, you can interact with fellow gamers from across India, share strategies, and build lasting friendships. 
+                  Our platform operates 24/7, ensuring you can enjoy your favorite games anytime, anywhere without any downloads or installations.
+                </p>
+                
+                <p>
+                  Security and fairness are our top priorities. We use bank-level encryption and advanced security protocols to protect your data and transactions. 
+                  Every game is powered by certified Random Number Generation (RNG) technology, guaranteeing fair play and unbiased results. 
+                  Plus, our instant withdrawal system ensures you receive your winnings quickly and securely.
+                </p>
+                
+                <p>
+                  Join our community of 500,000+ active players and start earning amazing rewards today. From daily login bonuses and seasonal tournaments 
+                  to exclusive gift codes and referral commissions, there are countless ways to maximize your earnings. 
+                  Whether you're a casual gamer or a competitive player, Big Mumbai Game offers something for everyone.
+                </p>
               </div>
             </div>
           </div>

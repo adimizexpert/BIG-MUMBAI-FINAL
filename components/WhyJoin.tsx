@@ -1,80 +1,62 @@
-import { Button } from '@/components/ui/button';
+import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, TrendingUp, Heart, Zap, Gift, Users } from 'lucide-react';
 
 export default function WhyJoin() {
-  const benefits = [
-    {
-      icon: Star,
-      title: 'Premium Gaming Experience',
-      description: 'High-quality games with smooth gameplay and stunning graphics.',
-      color: 'bg-yellow-500'
-    },
-    {
-      icon: TrendingUp,
-      title: 'Skill Development',
-      description: 'Improve your strategic thinking and problem-solving skills.',
-      color: 'bg-blue-500'
-    },
-    {
-      icon: Heart,
-      title: 'Stress Relief',
-      description: 'Unwind and relax with entertaining games after a busy day.',
-      color: 'bg-red-500'
-    },
-    {
-      icon: Zap,
-      title: 'Instant Entertainment',
-      description: 'Jump into games immediately without any waiting or downloads.',
-      color: 'bg-green-500'
-    },
-    {
-      icon: Gift,
-      title: 'Daily Rewards',
-      description: 'Earn points, bonuses, and prizes just by playing regularly.',
-      color: 'bg-purple-500'
-    },
-    {
-      icon: Users,
-      title: 'Social Connection',
-      description: 'Meet like-minded players and build lasting friendships.',
-      color: 'bg-indigo-500'
-    },
-  ];
-
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <span className="text-blue-600 font-semibold text-lg">🌟 Member Benefits</span>
+          <span className="text-blue-600 font-semibold text-lg">🌟 Why Choose Us</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
             Play Big Mumbai Games & Earn Real Money
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover the amazing benefits that await you as a Big Mumbai Game member. 
-            From exclusive rewards to lasting friendships, here's what you'll gain.
+            Discover why Big Mumbai Game is the ultimate choice for Indian gamers seeking entertainment, 
+            community, and real rewards.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-lg">
-                <CardContent className="p-8 text-center">
-                  <div className={`w-16 h-16 ${benefit.color} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+        {/* Why Join Big Mumbai Game */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
+                Why Join Big Mumbai Game?
+              </h3>
+              <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+                <p>
+                  <strong className="text-blue-600">Big Mumbai Game</strong> stands out as India's most trusted and exciting gaming platform. 
+                  We've created an environment where gaming meets opportunity, offering players not just entertainment but real chances to win 
+                  substantial rewards while building meaningful connections with fellow gamers.
+                </p>
+                
+                <p>
+                  Our platform is designed with Indian players in mind, featuring games that resonate with local preferences and cultural elements. 
+                  From traditional favorites to modern innovations, every game is carefully crafted to provide an engaging experience that keeps 
+                  players coming back for more. The variety ensures there's something for every type of gamer, whether you prefer quick rounds 
+                  or strategic gameplay.
+                </p>
+                
+                <p>
+                  What truly makes us special is our commitment to community building. Unlike other platforms that focus solely on individual play, 
+                  we encourage interaction, strategy sharing, and friendly competition among players. Our real-time chat system allows you to connect 
+                  with gamers from across India, creating a sense of belonging and camaraderie that enhances the overall gaming experience.
+                </p>
+                
+                <p>
+                  Security and transparency are fundamental to our operations. We understand that players need to trust the platform with their time 
+                  and money, which is why we've implemented industry-leading security measures. Our games use certified RNG technology, ensuring 
+                  fair play and unbiased results. Additionally, our customer support team is available 24/7 to assist with any questions or concerns.
+                </p>
+                
+                <p>
+                  The rewards system is designed to benefit both new and existing players. From generous welcome bonuses to daily login rewards, 
+                  seasonal tournaments, and referral commissions, there are multiple ways to maximize your earnings. We believe in rewarding 
+                  loyalty and active participation, making every gaming session potentially profitable.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

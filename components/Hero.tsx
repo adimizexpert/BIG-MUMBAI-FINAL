@@ -62,7 +62,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         {/* 1. Hero Image - Below Top Bar */}
-        <div className="mb-12">
+        <div className="mb-6">
           <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl mx-auto max-w-4xl">
             <Image
               src="/images/glamorous-woman-big-mumbai-game.jpeg"
@@ -74,13 +74,6 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             
-            {/* Main Title Overlay on Image - Centered */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl text-center px-4">
-                <span className="text-yellow-400">BIG MUMBAI GAME</span>
-              </h1>
-            </div>
-
             {/* Trending Badge - Top Right */}
             <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
               🔥 Trending
@@ -89,7 +82,7 @@ export default function Hero() {
         </div>
 
         {/* 2. Welcome Text */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Welcome to Big Mumbai Game
           </h2>
