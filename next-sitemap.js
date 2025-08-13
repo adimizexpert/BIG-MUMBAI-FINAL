@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://bigmumbai.game',
+  siteUrl: 'https://bigmumbaiwin.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   exclude: ['/404', '/500'],
@@ -13,9 +13,9 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      'https://bigmumbai.game/sitemap.xml',
+      'https://bigmumbaiwin.com/sitemap.xml',
     ],
-    sitemap: 'https://bigmumbai.game/sitemap.xml',
+    sitemap: 'https://bigmumbaiwin.com/sitemap.xml',
   },
   transform: async (config, path) => {
     // Custom priority and changefreq based on content type
@@ -46,11 +46,11 @@ module.exports = {
       lastmod: new Date().toISOString(),
       alternateRefs: [
         {
-          href: `https://bigmumbai.game${path}`,
+          href: `https://bigmumbaiwin.com${path}`,
           hreflang: 'en-IN',
         },
         {
-          href: `https://bigmumbai.game${path}`,
+          href: `https://bigmumbaiwin.com${path}`,
           hreflang: 'en',
         },
       ],

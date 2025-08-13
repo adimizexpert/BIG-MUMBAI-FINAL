@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
+    "sitemap": "next-sitemap",
     "seo:analyze": "lighthouse --output=json --output-path=./lighthouse-report.json --chrome-flags='--headless'",
     "seo:check": "next-sitemap && npm run seo:analyze",
     "seo:validate": "npm run build && npm run seo:check",
