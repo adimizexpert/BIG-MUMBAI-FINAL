@@ -1,230 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Homepage - Highest Priority -->
-  <url>
-    <loc>https://bigmumbai.game/</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/" />
-  </url>
-
-  <!-- Core Big Mumbai Gaming Pages -->
-  <url>
-    <loc>https://bigmumbai.game/games</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/games" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/games" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/challenges</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/challenges" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/challenges" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/rewards</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/rewards" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/rewards" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/leaderboard</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/leaderboard" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/leaderboard" />
-  </url>
-
-  <!-- Community & Social Features -->
-  <url>
-    <loc>https://bigmumbai.game/community</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/community" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/community" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/chat</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/chat" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/chat" />
-  </url>
-
-  <!-- Information Pages -->
-  <url>
-    <loc>https://bigmumbai.game/about</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/about" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/about" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/help</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/help" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/help" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/support</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/support" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/support" />
-  </url>
-
-  <!-- Action Pages -->
-  <url>
-    <loc>https://bigmumbai.game/play-now</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/play-now" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/play-now" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/join-community</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/join-community" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/join-community" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/win-rewards</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/win-rewards" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/win-rewards" />
-  </url>
-
-  <!-- Feature Highlight Pages -->
-  <url>
-    <loc>https://bigmumbai.game/gaming-experience</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/gaming-experience" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/gaming-experience" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/interactive-challenges</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/interactive-challenges" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/interactive-challenges" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/real-time-gaming</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/real-time-gaming" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/real-time-gaming" />
-  </url>
-
-  <!-- Platform & Technology Pages -->
-  <url>
-    <loc>https://bigmumbai.game/mobile-gaming</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/mobile-gaming" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/mobile-gaming" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/online-gaming</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/online-gaming" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/online-gaming" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/india-gaming</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/india-gaming" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/india-gaming" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/gaming-platform</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/gaming-platform" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/gaming-platform" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/entertainment-platform</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/entertainment-platform" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/entertainment-platform" />
-  </url>
-
-  <!-- Legal & Policy Pages -->
-  <url>
-    <loc>https://bigmumbai.game/terms</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/terms" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/terms" />
-  </url>
-
-  <url>
-    <loc>https://bigmumbai.game/privacy</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/privacy" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/privacy" />
-  </url>
-
-  <!-- Download & App Pages -->
-  <url>
-    <loc>https://bigmumbai.game/download</loc>
-    <lastmod>2024-12-19T00:00:00.000Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bigmumbai.game/download" />
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbai.game/download" />
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://bigmumbaiwin.com/about/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbaiwin.com/about/about/"/><xhtml:link rel="alternate" hreflang="en" href="https://bigmumbaiwin.com/about/about/"/></url>
+<url><loc>https://bigmumbaiwin.com/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>daily</changefreq><priority>1</priority><xhtml:link rel="alternate" hreflang="en-IN" href="https://bigmumbaiwin.com/"/><xhtml:link rel="alternate" hreflang="en" href="https://bigmumbaiwin.com/"/></url>
+<url><loc>https://bigmumbaiwin.com/games/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/challenges/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/rewards/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/leaderboard/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/community/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/chat/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/help/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/support/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/terms/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/privacy/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/download/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/play-now/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/join-community/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/win-rewards/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/gaming-experience/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/interactive-challenges/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/real-time-gaming/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/mobile-gaming/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/online-gaming/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/india-gaming/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/gaming-platform/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://bigmumbaiwin.com/entertainment-platform/</loc><lastmod>2025-08-13T05:43:48.338Z</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
