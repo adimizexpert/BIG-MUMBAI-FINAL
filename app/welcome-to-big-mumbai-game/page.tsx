@@ -1,26 +1,59 @@
-import React from "react";
-import { Metadata } from "next";
+"use client";
+
+import React, { useState } from "react";
 import { Calendar, Clock, User, ArrowLeft, Share2, Heart, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "What Is Big Mumbai Game - Complete Guide to Mumbai's Premier Gaming Platform",
-  description: "Discover the Big Mumbai Gaming App - an innovative mobile application offering diverse games, multiplayer challenges, and local cultural themes. Learn about features, community engagement, and how to get started.",
-  openGraph: {
-    title: "What Is Big Mumbai Game - Complete Guide to Mumbai's Premier Gaming Platform",
-    description: "Discover the Big Mumbai Gaming App - an innovative mobile application offering diverse games, multiplayer challenges, and local cultural themes.",
-    type: "article",
-    url: "https://bigmumbaiwin.com/welcome-to-big-mumbai-game",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "What Is Big Mumbai Game - Complete Guide to Mumbai's Premier Gaming Platform",
-    description: "Discover the Big Mumbai Gaming App - an innovative mobile application offering diverse games, multiplayer challenges, and local cultural themes.",
-  },
-};
-
 export default function BlogPostPage() {
+  const [isLiked, setIsLiked] = useState(false);
+  const [likeCount, setLikeCount] = useState(42);
+  const [commentCount, setCommentCount] = useState(8);
+  const [shareCount, setShareCount] = useState(15);
+
+  const handleLike = () => {
+    if (isLiked) {
+      setLikeCount(prev => prev - 1);
+      setIsLiked(false);
+    } else {
+      setLikeCount(prev => prev + 1);
+      setIsLiked(true);
+    }
+  };
+
+  const handleShare = async () => {
+    const shareData = {
+      title: "What Is Big Mumbai Game - Complete Guide",
+      text: "Discover the Big Mumbai Gaming App - an innovative mobile application offering diverse games and local cultural themes.",
+      url: "https://bigmumbaiwin.com/welcome-to-big-mumbai-game"
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        setShareCount(prev => prev + 1);
+      } else {
+        // Fallback for browsers that don't support native sharing
+        await navigator.clipboard.writeText(shareData.url);
+        alert("Link copied to clipboard! Share it with your friends.");
+        setShareCount(prev => prev + 1);
+      }
+    } catch (error) {
+      console.log("Error sharing:", error);
+    }
+  };
+
+  const handleComment = () => {
+    // Scroll to comment section or open comment modal
+    const commentSection = document.getElementById('comment-section');
+    if (commentSection) {
+      commentSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If no comment section exists, show a simple alert
+      alert("Comment feature coming soon! Stay tuned for community discussions.");
+    }
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white">
       <div className="container mx-auto px-4 py-20">
@@ -207,18 +240,41 @@ export default function BlogPostPage() {
 
           {/* Social Actions */}
           <div className="flex items-center justify-center space-x-6 mt-12">
-            <button className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors duration-200">
-              <Heart className="w-5 h-5" />
-              <span>Like</span>
+            <button 
+              onClick={handleLike}
+              className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-200 ${
+                isLiked 
+                  ? 'bg-red-600 hover:bg-red-700 text-white' 
+                  : 'bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white'
+              }`}
+            >
+              <Heart className={`w-5 h-5 ${isLiked ? 'fill-current' : ''}`} />
+              <span>{likeCount}</span>
             </button>
-            <button className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200">
+            <button 
+              onClick={handleShare}
+              className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+            >
               <Share2 className="w-5 h-5" />
-              <span>Share</span>
+              <span>{shareCount}</span>
             </button>
-            <button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200">
+            <button 
+              onClick={handleComment}
+              className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+            >
               <MessageCircle className="w-5 h-5" />
-              <span>Comment</span>
+              <span>{commentCount}</span>
             </button>
+          </div>
+
+          {/* Comment Section */}
+          <div id="comment-section" className="mt-8 bg-white/5 rounded-2xl p-6 border border-white/10">
+            <h3 className="text-xl font-bold text-yellow-400 mb-4">Comments ({commentCount})</h3>
+            <div className="text-center text-gray-400 py-8">
+              <MessageCircle className="w-12 h-12 mx-auto mb-4 text-gray-600" />
+              <p className="text-lg">Comment feature coming soon!</p>
+              <p className="text-sm">Join the discussion and share your thoughts about Big Mumbai Game.</p>
+            </div>
           </div>
 
           {/* Blog Navigation */}
