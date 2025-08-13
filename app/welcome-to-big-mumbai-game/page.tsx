@@ -58,8 +58,8 @@ export default function BlogPostPage() {
           <div className="mb-12">
             <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/glamorous-woman-big-mumbai-game.jpeg"
-                alt="Big Mumbai Game - Innovative mobile gaming platform with diverse games and local cultural themes"
+                src="/images/luxurious-casino-big-mumbai-game.jpeg"
+                alt="BIG MUMBAI - Luxurious casino-themed gaming platform featuring roulette wheel, playing cards, dice, casino chips, and luxury cars against a futuristic Mumbai cityscape with neon lights and golden accents"
                 fill
                 className="object-cover"
                 quality={90}
@@ -219,6 +219,28 @@ export default function BlogPostPage() {
               <MessageCircle className="w-5 h-5" />
               <span>Comment</span>
             </button>
+          </div>
+
+          {/* Blog Navigation */}
+          <div className="mt-16 border-t border-white/20 pt-8">
+            <div className="flex items-center justify-between">
+              <div className="text-left">
+                <span className="text-sm text-gray-400 block mb-2">Previous Post</span>
+                <span className="text-gray-500 text-sm">No previous posts yet</span>
+              </div>
+              
+              <div className="text-right">
+                <span className="text-sm text-gray-400 block mb-2">Next Post</span>
+                <div className="bg-gradient-to-r from-yellow-900/30 to-orange-900/30 rounded-lg p-4 border border-white/20 hover:bg-gradient-to-r hover:from-yellow-800/40 hover:to-orange-800/40 transition-all duration-300">
+                  <h4 className="text-lg font-semibold text-yellow-400 mb-2">Coming Soon!</h4>
+                  <p className="text-gray-300 text-sm mb-3">Stay tuned for our next exciting blog post about gaming strategies and tips.</p>
+                  <div className="flex items-center justify-end space-x-2 text-yellow-400">
+                    <span className="text-sm font-medium">Read Next</span>
+                    <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
