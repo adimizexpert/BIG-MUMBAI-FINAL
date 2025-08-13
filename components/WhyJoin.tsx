@@ -76,45 +76,6 @@ export default function WhyJoin() {
             );
           })}
         </div>
-
-        {/* Success Stories Section */}
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8 md:p-12">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories from Our Community
-            </h3>
-            <p className="text-xl text-gray-600">
-              Real players, real wins, real friendships formed on our platform.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">₹25,000</div>
-              <div className="text-gray-600 mb-2">Highest Single Win</div>
-              <div className="text-sm text-gray-500">Rajesh K. from Mumbai</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">1,200+</div>
-              <div className="text-gray-600 mb-2">Games Won This Month</div>
-              <div className="text-sm text-gray-500">Priya S. from Delhi</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">150+</div>
-              <div className="text-gray-600 mb-2">Friends Made</div>
-              <div className="text-sm text-gray-500">Amit P. from Bangalore</div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-12 text-lg shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              🚀 Start Your Success Story Today!
-            </Button>
-          </div>
-        </div>
       </div>
     </section>
   );
