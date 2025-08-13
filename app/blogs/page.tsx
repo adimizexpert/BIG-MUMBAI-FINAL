@@ -1,24 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
-import { Metadata } from "next";
 import { Calendar, Clock, User, ArrowRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "Blogs - Big Mumbai Game",
-  description: "Read the latest blogs, tips, and insights about Big Mumbai Game platform, gaming strategies, and community updates.",
-  openGraph: {
-    title: "Blogs - Big Mumbai Game",
-    description: "Read the latest blogs, tips, and insights about Big Mumbai Game platform, gaming strategies, and community updates.",
-    type: "website",
-    url: "https://bigmumbaiwin.com/blogs",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Blogs - Big Mumbai Game",
-    description: "Read the latest blogs, tips, and insights about Big Mumbai Game platform, gaming strategies, and community updates.",
-  },
-};
 
 // Blog data - Add new blogs here
 const blogPosts = [
