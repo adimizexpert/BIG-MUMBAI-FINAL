@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Gamepad2, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -36,8 +37,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
-              <Gamepad2 className="w-6 h-6 text-black" />
+            <div className="w-10 h-10 relative">
+              <Image
+                src="/images/big-mumbai-logo.jpg"
+                alt="Big Mumbai Logo"
+                fill
+                className="object-contain rounded-lg"
+                priority
+              />
             </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-white">BIG MUMBAI</h1>

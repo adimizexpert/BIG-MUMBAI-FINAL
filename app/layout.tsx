@@ -59,6 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/images/big-mumbai-logo.jpg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/images/big-mumbai-logo.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/images/big-mumbai-logo.jpg" />
         <link rel="preload" href="/images/hero-bg.jpg" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
