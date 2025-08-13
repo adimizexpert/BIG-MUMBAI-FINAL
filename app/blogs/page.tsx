@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Metadata } from "next";
-import { Calendar, Clock, User, ArrowRight } from "lucide-react";
+import { Calendar, Clock, User, ArrowRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -49,11 +49,94 @@ const blogPosts = [
 ];
 
 export default function BlogsPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const featuredBlog = blogPosts.find(blog => blog.featured);
   const regularBlogs = blogPosts.filter(blog => !blog.featured);
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white">
+      {/* Navigation Header */}
+      <div className="bg-black/20 backdrop-blur-md border-b border-white/20 sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-6">
+              <Link 
+                href="/" 
+                className="inline-flex items-center space-x-2 text-yellow-400 hover:text-yellow-300 transition-colors duration-200 font-semibold"
+              >
+                <span className="text-xl">🏠</span>
+                <span>Home</span>
+              </Link>
+              <span className="text-gray-400 hidden md:inline">|</span>
+              <span className="text-white font-semibold">Blogs</span>
+            </div>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-4">
+              <Link 
+                href="/about" 
+                className="text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                About
+              </Link>
+              <Link 
+                href="/contact" 
+                className="text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                Contact
+              </Link>
+              <a 
+                href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-lg transition-colors duration-200"
+              >
+                🎮 Play Now
+              </a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden text-white hover:text-yellow-400 transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t border-white/20">
+              <div className="flex flex-col space-y-3 pt-4">
+                <Link 
+                  href="/about" 
+                  className="text-gray-300 hover:text-white transition-colors duration-200 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="text-gray-300 hover:text-white transition-colors duration-200 py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </Link>
+                <a 
+                  href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-lg transition-colors duration-200 text-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  🎮 Play Now
+                </a>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-8 text-yellow-400">
