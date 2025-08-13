@@ -124,16 +124,16 @@ export default function Hero() {
 
           {/* Right Column - Hero Image with the glamorous woman */}
           <div className="relative">
-            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl">
               <Image
                 src="/images/glamorous-woman-big-mumbai-game.jpeg"
-                alt="Glamorous young woman playing Big Mumbai game with neon lights and disco ball"
+                alt="Glamorous young woman with long wavy hair wearing shimmering silver top, playing colorful board game with neon lights and disco ball in background - Big Mumbai Game"
                 fill
-                className="object-cover"
+                className="object-contain"
                 quality={90}
                 priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               
               {/* Floating Elements */}
               <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
