@@ -77,7 +77,7 @@ export default function BlogPostPage() {
             <div className="flex items-center justify-center space-x-4 text-sm text-gray-400 mb-6">
               <div className="flex items-center space-x-2">
                 <User className="w-4 h-4" />
-                <span>Written by Big Mumbai Team</span>
+                <span>Written by Aditya</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Calendar className="w-4 h-4" />
@@ -102,7 +102,7 @@ export default function BlogPostPage() {
                 src="/images/blogs/how-to-register-big-mumbai-app-header.jpg"
                 alt="Big Mumbai App registration guide - Step by step process to create account and start playing color prediction games"
                 fill
-                className="object-cover"
+                className="object-contain"
                 quality={90}
                 priority
               />

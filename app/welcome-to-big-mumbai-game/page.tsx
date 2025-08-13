@@ -78,7 +78,7 @@ export default function BlogPostPage() {
             <div className="flex items-center justify-center space-x-4 text-sm text-gray-400 mb-6">
               <div className="flex items-center space-x-2">
                 <User className="w-4 h-4" />
-                <span>Written by Big Mumbai Team</span>
+                <span>Written by Aditya</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Calendar className="w-4 h-4" />
@@ -94,7 +94,7 @@ export default function BlogPostPage() {
                 src="/images/luxurious-casino-big-mumbai-game.jpeg"
                 alt="BIG MUMBAI - Luxurious casino-themed gaming platform featuring roulette wheel, playing cards, dice, casino chips, and luxury cars against a futuristic Mumbai cityscape with neon lights and golden accents"
                 fill
-                className="object-cover"
+                className="object-contain"
                 quality={90}
                 priority
               />

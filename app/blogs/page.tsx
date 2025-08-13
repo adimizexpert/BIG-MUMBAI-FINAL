@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Blogs - Big Mumbai Game",
@@ -26,7 +27,7 @@ const blogPosts = [
     title: "How To Register For An Account On Big Mumbai App",
     slug: "how-to-register-big-mumbai-app",
     excerpt: "Learn how to register for Big Mumbai App in simple steps. Get your invitation code and start earning money through exciting color prediction games.",
-    author: "Big Mumbai Team",
+    author: "Aditya",
     date: "2025-01-13",
     readTime: "7 min read",
     category: "Getting Started",
@@ -38,7 +39,7 @@ const blogPosts = [
     title: "What Is Big Mumbai Game",
     slug: "welcome-to-big-mumbai-game",
     excerpt: "Discover the Big Mumbai Gaming App - an innovative mobile application offering diverse games, multiplayer challenges, and local cultural themes.",
-    author: "Big Mumbai Team",
+    author: "Aditya",
     date: "2024-12-15",
     readTime: "5 min read",
     category: "Getting Started",
@@ -125,43 +126,56 @@ export default function BlogsPage() {
             <h2 className="text-2xl font-bold text-yellow-400 mb-8 text-center">All Blog Posts</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {blogPosts.map((blog) => (
-                <div key={blog.id} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
-                  <div className="mb-4">
-                    <div className="inline-block bg-yellow-500 text-black text-sm font-bold px-3 py-1 rounded-full mb-3">
-                      {blog.category}
+                <div key={blog.id} className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 overflow-hidden">
+                  {/* Blog Thumbnail Image */}
+                  <div className="relative w-full h-48 overflow-hidden">
+                    <Image
+                      src={blog.image}
+                      alt={`${blog.title} - Big Mumbai Game Blog`}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                      quality={80}
+                    />
+                    <div className="absolute top-3 left-3">
+                      <div className="inline-block bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full">
+                        {blog.category}
+                      </div>
                     </div>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">
-                    {blog.title}
-                  </h3>
-                  
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
-                    {blog.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between text-xs text-gray-400 mb-4">
-                    <div className="flex items-center space-x-2">
-                      <User className="w-3 h-3" />
-                      <span>{blog.author}</span>
+                  {/* Blog Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-white mb-3 line-clamp-2">
+                      {blog.title}
+                    </h3>
+                    
+                    <p className="text-gray-300 text-sm leading-relaxed mb-4 line-clamp-3">
+                      {blog.excerpt}
+                    </p>
+                    
+                    <div className="flex items-center justify-between text-xs text-gray-400 mb-4">
+                      <div className="flex items-center space-x-2">
+                        <User className="w-3 h-3" />
+                        <span>{blog.author}</span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <Calendar className="w-3 h-3" />
+                        <span>{blog.date}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-2">
-                      <Calendar className="w-3 h-3" />
-                      <span>{blog.date}</span>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="text-xs text-gray-400">
+                        <Clock className="w-3 h-3 inline mr-1" />
+                        {blog.readTime}
+                      </div>
+                      <Link 
+                        href={`/${blog.slug}`}
+                        className="text-yellow-400 hover:text-yellow-300 text-sm font-semibold transition-colors duration-200"
+                      >
+                        Read More →
+                      </Link>
                     </div>
-                  </div>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="text-xs text-gray-400">
-                      <Clock className="w-3 h-3 inline mr-1" />
-                      {blog.readTime}
-                    </div>
-                    <Link 
-                      href={`/${blog.slug}`}
-                      className="text-yellow-400 hover:text-yellow-300 text-sm font-semibold transition-colors duration-200"
-                    >
-                      Read More →
-                    </Link>
                   </div>
                 </div>
               ))}
