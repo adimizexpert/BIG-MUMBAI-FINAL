@@ -35,14 +35,21 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><a href="#games" className="text-gray-400 hover:text-white transition-colors">Games</a></li>
-              <li><a href="#how-to-login" className="text-gray-400 hover:text-white transition-colors">How to Play</a></li>
-              <li><a href="#bonuses" className="text-gray-400 hover:text-white transition-colors">Bonuses & Rewards</a></li>
-              <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-            </ul>
+            <div className="space-y-4">
+              <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="#home" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Home</a></li>
+                <li><a href="#games" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Games</a></li>
+                <li><a href="#how-to-login" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">How to Play</a></li>
+                <li><a href="#bonuses" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Bonuses</a></li>
+                <li><a href="#faq" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">FAQ</a></li>
+                <li><a href="/about" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">About</a></li>
+                <li><a href="/contact" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Contact</a></li>
+                <li><a href="/privacy-policy" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Terms of Service</a></li>
+                <li><a href="/disclaimer" className="text-gray-400 hover:text-yellow-400 transition-colors duration-200">Disclaimer</a></li>
+              </ul>
+            </div>
           </div>
 
           {/* Support */}
