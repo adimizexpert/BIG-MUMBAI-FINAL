@@ -23,7 +23,7 @@ export default function Header() {
     { name: 'How to Play', href: '#how-to-login' },
     { name: 'Bonuses', href: '#bonuses' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'About', href: '#about' }
+    { name: 'About', href: '/about' }
   ];
 
   return (
