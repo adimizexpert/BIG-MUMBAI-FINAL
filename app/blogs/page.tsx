@@ -34,18 +34,6 @@ const blogPosts = [
     image: "/images/blogs/how-to-register-big-mumbai-app-header.jpg"
   },
   {
-    id: "top-5-gaming-strategies",
-    title: "Top 5 Gaming Strategies for Big Mumbai Game",
-    slug: "top-5-gaming-strategies-for-big-mumbai-game",
-    excerpt: "Master the essential strategies to improve your gaming performance and increase your winning chances on Big Mumbai Game platform.",
-    author: "Big Mumbai Team",
-    date: "2025-01-13",
-    readTime: "8 min read",
-    category: "Gaming Tips",
-    featured: false,
-    image: "/images/blogs/gaming-strategies-header.jpg"
-  },
-  {
     id: "welcome-guide",
     title: "What Is Big Mumbai Game",
     slug: "welcome-to-big-mumbai-game",
