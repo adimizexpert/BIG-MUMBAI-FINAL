@@ -61,9 +61,9 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        {/* Hero Image - Full Width and Prominent */}
-        <div className="mb-8">
-          <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl">
+        {/* 1. Hero Image - Below Top Bar */}
+        <div className="mb-12">
+          <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl mx-auto max-w-4xl">
             <Image
               src="/images/glamorous-woman-big-mumbai-game.jpeg"
               alt="Glamorous young woman with long wavy hair wearing shimmering silver top, playing colorful board game with neon lights and disco ball in background - Big Mumbai Game"
@@ -88,121 +88,95 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Minimal Content Below Image - Clean and Focused */}
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-            Experience the ultimate gaming platform where every second brings excitement and rewards!
-          </p>
-
-          {/* Simple Stats - Clean Layout */}
-          <div className="grid grid-cols-3 gap-6 mb-8">
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-red-600 rounded-full mx-auto mb-2">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-lg font-bold text-white">500K+</div>
-              <div className="text-xs text-gray-400">Active Players</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full mx-auto mb-2">
-                <Play className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-lg font-bold text-white">100+</div>
-              <div className="text-xs text-gray-400">Games</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-yellow-600 rounded-full mx-auto mb-2">
-                <Trophy className="w-6 h-6 text-white" />
-              </div>
-              <div className="text-lg font-bold text-white">₹10L+</div>
-              <div className="text-xs text-gray-400">Rewards Given</div>
-            </div>
-          </div>
-
-          {/* CTA Buttons - Simple and Clean */}
-          <div className="w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-6 text-lg shadow-lg transform hover:scale-105 transition-all duration-300 border-0"
-                >
-                  🎮 Login
-                </Button>
-              </a>
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button 
-                  size="lg"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 text-lg shadow-lg transform hover:scale-105 transition-all duration-300 border-0"
-                >
-                  🎯 Register
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Welcome Banner - Simple */}
-      <div className="bg-gradient-to-r from-orange-600 to-orange-700 py-6 relative z-10">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white">
-            Welcome To Big Mumbai Game
+        {/* 2. Welcome Text */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Welcome to Big Mumbai Game
           </h2>
         </div>
-      </div>
 
-      {/* Informational Text Section - Clean and Simple */}
-      <div className="py-16 bg-gray-900 relative z-10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-gray-300">
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+        {/* 3. Full Width Login & Register Buttons */}
+        <div className="w-full mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl mx-auto">
+            <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button 
+                size="lg" 
+                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-6 px-8 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+              >
+                🎮 Login Now
+              </Button>
+            </a>
+            <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button 
+                size="lg"
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-6 px-8 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+              >
+                🎯 Register Now
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        {/* 4. About Big Mumbai Game Content */}
+        <div className="max-w-4xl mx-auto text-center text-gray-300">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">
+            About Big Mumbai Game
+          </h3>
+          
+          <div className="space-y-6 text-lg md:text-xl leading-relaxed">
+            <p>
               <strong className="text-yellow-400">Big Mumbai Game</strong> is an online Gaming Platform to win rewards in every second. 
               We provide multiple bonuses and commission on every referral.
             </p>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+            
+            <p>
               Our platform provides predictions that can help in winning possibility. We offer various games like 
               <strong className="text-green-400"> Lottery, Casino, Fishing and Aviator</strong> etc.
             </p>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+            
+            <p>
               <strong className="text-blue-400">Big Mumbai Game</strong> also Provide Video Tutorial That can help to play the game safely.
             </p>
-            <p className="text-lg md:text-xl mb-8 leading-relaxed">
+            
+            <p>
               It's an <strong className="text-yellow-400">Online Free Platform</strong>, and you can play without Downloading app, 
-              through our official Website. Just follow the Login – Register Link Mention Below.
+              through our official Website. Just follow the Login – Register Link Mention Above.
             </p>
+          </div>
 
-            {/* Simple CTA Buttons */}
-            <div className="w-full mb-8">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-lg mx-auto">
-                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 text-lg shadow-lg transform hover:scale-105 transition-all duration-300 border-0"
-                  >
-                    🎮 Login
-                  </Button>
-                </a>
-                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
-                  <Button 
-                    size="lg"
-                    className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 text-lg shadow-lg transform hover:scale-105 transition-all duration-300 border-0"
-                  >
-                    🎯 Register
-                  </Button>
-                </a>
+          {/* Stats Section */}
+          <div className="mt-12 grid grid-cols-3 gap-6">
+            <div className="text-center">
+              <div className="flex items-center justify-center w-16 h-16 bg-red-600 rounded-full mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
               </div>
+              <div className="text-2xl font-bold text-white mb-2">500K+</div>
+              <div className="text-sm text-gray-400">Active Players</div>
             </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center w-16 h-16 bg-green-600 rounded-full mx-auto mb-4">
+                <Play className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-2xl font-bold text-white mb-2">100+</div>
+              <div className="text-sm text-gray-400">Games</div>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center w-16 h-16 bg-yellow-600 rounded-full mx-auto mb-4">
+                <Trophy className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-2xl font-bold text-white mb-2">₹10L+</div>
+              <div className="text-sm text-gray-400">Rewards Given</div>
+            </div>
+          </div>
 
-            {/* Simple Gift Code Section */}
-            <div className="bg-gradient-to-r from-orange-700 to-orange-800 rounded-xl p-6">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-                Big Mumbai Game Gift Code that help in Bonus
-              </h3>
-              <p className="text-base text-orange-100">
-                Use our exclusive gift codes to unlock amazing bonuses and rewards!
-              </p>
-            </div>
+          {/* Gift Code Section */}
+          <div className="mt-12 bg-gradient-to-r from-orange-700 to-orange-800 rounded-2xl p-8">
+            <h4 className="text-2xl font-bold text-white mb-4">
+              Big Mumbai Game Gift Code that help in Bonus
+            </h4>
+            <p className="text-lg text-orange-100">
+              Use our exclusive gift codes to unlock amazing bonuses and rewards!
+            </p>
           </div>
         </div>
       </div>
