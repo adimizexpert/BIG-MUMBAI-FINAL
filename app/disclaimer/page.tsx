@@ -58,7 +58,7 @@ export default function DisclaimerPage() {
                   <h2 className="text-2xl font-bold text-yellow-400 mt-8 mb-4">2. Third-Party Links</h2>
                   <p className="text-lg leading-relaxed">
                     Our website may contain links to external sites that are not provided or maintained by us 
-                    <strong className="text-blue-300"> [bigmumbaigames.app]</strong>. We have no control over the content 
+                    <strong className="text-blue-300"> bigmumbaiwin.com</strong>. We have no control over the content 
                     and availability of those sites and do not endorse or make any representations about them. 
                     Accessing third-party websites is at your own risk.
                   </p>
