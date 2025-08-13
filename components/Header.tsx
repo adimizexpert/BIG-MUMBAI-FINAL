@@ -1,12 +1,21 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Gamepad2 } from 'lucide-react';
+import { Gamepad2, Menu, X } from 'lucide-react';
+
+const navigation = [
+  { name: 'Home', href: '#home' },
+  { name: 'Games', href: '#games' },
+  { name: 'How to Play', href: '#how-to-login' },
+  { name: 'Bonuses', href: '#bonuses' },
+  { name: 'FAQ', href: '#faq' },
+  { name: 'About', href: '/about' },
+];
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,15 +25,6 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navigation = [
-    { name: 'Home', href: '#home' },
-    { name: 'Games', href: '#games' },
-    { name: 'How to Play', href: '#how-to-login' },
-    { name: 'Bonuses', href: '#bonuses' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'About', href: '/about' }
-  ];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -62,21 +62,25 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button 
-              variant="outline" 
-              className={`border-2 transition-all duration-200 ${
-                isScrolled 
-                  ? 'border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white' 
-                  : 'border-white text-white hover:bg-white hover:text-blue-600'
-              }`}
-            >
-              🔐 Login
-            </Button>
-            <Button 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              🎮 Register & Get ₹500
-            </Button>
+            <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+              <Button 
+                variant="outline" 
+                className={`border-2 transition-all duration-200 ${
+                  isScrolled 
+                    ? 'border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white' 
+                    : 'border-white text-white hover:bg-white hover:text-blue-600'
+                }`}
+              >
+                🔐 Login
+              </Button>
+            </a>
+            <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold shadow-lg transform hover:scale-105 transition-all duration-200"
+              >
+                🎮 Register & Get ₹500
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,17 +111,21 @@ export default function Header() {
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <Button 
-                  variant="outline" 
-                  className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                >
-                  🔐 Login
-                </Button>
-                <Button 
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold"
-                >
-                  🎮 Register & Get ₹500
-                </Button>
+                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="block">
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                  >
+                    🔐 Login
+                  </Button>
+                </a>
+                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="block">
+                  <Button 
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold"
+                  >
+                    🎮 Register & Get ₹500
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

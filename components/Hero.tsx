@@ -125,19 +125,23 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-8 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-              >
-                🎮 Register Now & Get ₹500 Bonus!
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white font-semibold py-4 px-8 text-lg backdrop-blur-md transition-all duration-300"
-              >
-                Login
-              </Button>
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-8 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                >
+                  🎮 Register Now & Get ₹500 Bonus!
+                </Button>
+              </a>
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white font-semibold py-4 px-8 text-lg backdrop-blur-md transition-all duration-300"
+                >
+                  Login
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -167,12 +171,14 @@ export default function Hero() {
 
       {/* Floating Register Button for Mobile */}
       <div className="fixed bottom-4 left-4 right-4 z-50 lg:hidden">
-        <Button 
-          size="lg" 
-          className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-        >
-          🎮 Register Now & Get ₹500 Bonus!
-        </Button>
+        <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+          <Button 
+            size="lg" 
+            className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+          >
+            🎮 Register Now & Get ₹500 Bonus!
+          </Button>
+        </a>
       </div>
     </section>
   );
