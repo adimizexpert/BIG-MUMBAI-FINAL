@@ -125,19 +125,23 @@ export default function HowToLogin() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-              >
-                🎮 Register Now & Get ₹500 Bonus!
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-6 px-8 text-xl transition-all duration-300"
-              >
-                🔐 Login to Your Account
-              </Button>
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                >
+                  🎮 Register
+                </Button>
+              </a>
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-bold py-6 px-8 text-xl transition-all duration-300"
+                >
+                  🔐 Login to Your Account
+                </Button>
+              </a>
             </div>
 
             <div className="mt-8 text-gray-600 text-sm">

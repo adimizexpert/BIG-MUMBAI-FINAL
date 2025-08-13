@@ -1,32 +1,12 @@
+# *
 User-agent: *
 Allow: /
-
-# Disallow sensitive areas
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
-Disallow: /_next/
-Disallow: /static/
 
-# Allow important Big Mumbai content
-Allow: /games/
-Allow: /challenges/
-Allow: /rewards/
-Allow: /leaderboard/
-Allow: /community/
-Allow: /chat/
-Allow: /about/
-Allow: /help/
-Allow: /support/
+# Host
+Host: https://bigmumbaiwin.com
 
-# Crawl delay for better server performance
-Crawl-delay: 1
-
-# Sitemap location
-Sitemap: https://bigmumbai.game/sitemap.xml
-
-# Additional sitemaps
-Sitemap: https://bigmumbai.game/sitemap-0.xml
-
-# Host directive
-Host: https://bigmumbai.game
+# Sitemaps
+Sitemap: https://bigmumbaiwin.com/sitemap.xml

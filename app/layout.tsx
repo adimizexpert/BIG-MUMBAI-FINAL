@@ -59,6 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/images/big-mumbai-logo.jpg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/images/big-mumbai-logo.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/images/big-mumbai-logo.jpg" />
         <link rel="preload" href="/images/hero-bg.jpg" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -151,6 +154,41 @@ export default function RootLayout({
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Withdrawals are processed instantly to your bank account, UPI, or digital wallet. There's no minimum withdrawal limit, and all transactions are free of charge. Most withdrawals are completed within 5 minutes."
+                }
+              },{
+                "@type": "Question",
+                "name": "What types of games can I play?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer 100+ games including puzzles, strategy games, trivia, card games, and action challenges. All games are skill-based and fair, with new games added regularly based on player feedback."
+                }
+              },{
+                "@type": "Question",
+                "name": "Are the rewards real money?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! All rewards, bonuses, and prize money are real and can be withdrawn directly to your bank account. We've already distributed over ₹10 lakhs in rewards to our players."
+                }
+              },{
+                "@type": "Question",
+                "name": "Can I play on mobile devices?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Definitely! Big Mumbai Game is optimized for all devices - smartphones, tablets, and computers. No downloads required - just open your browser and start playing instantly."
+                }
+              },{
+                "@type": "Question",
+                "name": "What is the welcome bonus?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "New players receive ₹500 as a welcome bonus immediately after registration. This bonus can be used to play games and any winnings from bonus gameplay can be withdrawn after completing simple verification steps."
+                }
+              },{
+                "@type": "Question",
+                "name": "How does customer support work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We provide 24/7 customer support through live chat, email, and phone. Our support team responds within minutes and can help with any questions, technical issues, or account matters in Hindi and English."
                 }
               }]
             })
