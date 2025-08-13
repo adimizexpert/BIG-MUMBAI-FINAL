@@ -15,7 +15,6 @@ module.exports = {
     additionalSitemaps: [
       'https://bigmumbaiwin.com/sitemap.xml',
     ],
-    sitemap: 'https://bigmumbaiwin.com/sitemap.xml',
   },
   transform: async (config, path) => {
     // Custom priority and changefreq based on content type
@@ -25,16 +24,19 @@ module.exports = {
     if (path === '/') {
       priority = 1.0;
       changefreq = 'daily';
-    } else if (path.includes('/games') || path.includes('/challenges')) {
-      priority = 0.9;
-      changefreq = 'daily';
-    } else if (path.includes('/rewards') || path.includes('/leaderboard')) {
+    } else if (path.includes('/about')) {
       priority = 0.8;
-      changefreq = 'daily';
-    } else if (path.includes('/community') || path.includes('/chat')) {
+      changefreq = 'monthly';
+    } else if (path.includes('/contact')) {
       priority = 0.8;
-      changefreq = 'hourly';
-    } else if (path.includes('/about') || path.includes('/help')) {
+      changefreq = 'monthly';
+    } else if (path.includes('/privacy-policy')) {
+      priority = 0.6;
+      changefreq = 'monthly';
+    } else if (path.includes('/terms-of-service')) {
+      priority = 0.6;
+      changefreq = 'monthly';
+    } else if (path.includes('/disclaimer')) {
       priority = 0.6;
       changefreq = 'monthly';
     }
@@ -59,34 +61,17 @@ module.exports = {
   additionalPaths: async (config) => {
     // Add additional important Big Mumbai related paths
     const additionalPaths = [
-      '/games',
-      '/challenges',
-      '/rewards',
-      '/leaderboard',
-      '/community',
-      '/chat',
       '/about',
-      '/help',
-      '/support',
-      '/terms',
-      '/privacy',
-      '/download',
-      '/play-now',
-      '/join-community',
-      '/win-rewards',
-      '/gaming-experience',
-      '/interactive-challenges',
-      '/real-time-gaming',
-      '/mobile-gaming',
-      '/online-gaming',
-      '/india-gaming',
-      '/gaming-platform',
-      '/entertainment-platform'
+      '/contact',
+      '/privacy-policy',
+      '/terms-of-service',
+      '/disclaimer',
+      '/blogs'
     ];
     
     return additionalPaths.map(path => ({
       loc: path,
-      changefreq: 'weekly',
+      changefreq: 'monthly',
       priority: 0.8,
       lastmod: new Date().toISOString(),
     }));
