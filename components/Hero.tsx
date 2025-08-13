@@ -78,20 +78,13 @@ export default function Hero() {
             <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
               🔥 Trending
             </div>
-            <div className="absolute bottom-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-              ✅ Verified Safe
-            </div>
           </div>
         </div>
 
         {/* Text Content Below Image */}
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-bold mb-8">
-            <span className="text-yellow-400 drop-shadow-lg">BIG</span>
-            <br />
-            <span className="text-white drop-shadow-lg">MUMBAI</span>
-            <br />
-            <span className="text-yellow-400 drop-shadow-lg">GAME</span>
+            <span className="text-yellow-400 drop-shadow-lg">BIG MUMBAI GAME</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
@@ -123,7 +116,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Full Width CTA Buttons */}
+          {/* Full Width CTA Buttons - Prominently Visible */}
           <div className="w-full mb-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
               <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
