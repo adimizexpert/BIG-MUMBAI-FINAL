@@ -40,7 +40,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -65,14 +65,11 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Big Mumbai:
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                {' '}A Unique Play & Connect Experience
-              </span>
+              Big Mumbai - The Official Gaming Platform for Real Wins
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Enjoy Fun, Challenges & Exciting Rewards – Anytime, Anywhere
+              Login and play exciting color prediction games, win real money, and claim your exclusive welcome bonus and gift codes
             </p>
 
             {/* Stats */}

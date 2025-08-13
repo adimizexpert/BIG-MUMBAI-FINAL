@@ -4,11 +4,11 @@ import { Gift, Zap, Users, Trophy } from 'lucide-react';
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-gradient-to-r from-red-600 via-red-700 to-red-800">
+    <section id="bonuses" className="py-20 bg-gradient-to-r from-red-600 via-red-700 to-red-800">
       <div className="container mx-auto px-4">
         <div className="text-center text-white mb-12">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Ready to Start Winning?
+            Exclusive Bonuses and Gift Codes
           </h2>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
             Join 500,000+ players who are already enjoying the excitement and winning amazing rewards every day!

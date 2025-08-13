@@ -36,12 +36,12 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Games</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Tournaments</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Leaderboard</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Community</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Rewards</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mobile App</a></li>
+              <li><a href="#games" className="text-gray-400 hover:text-white transition-colors">Games</a></li>
+              <li><a href="#how-to-login" className="text-gray-400 hover:text-white transition-colors">How to Play</a></li>
+              <li><a href="#bonuses" className="text-gray-400 hover:text-white transition-colors">Bonuses & Rewards</a></li>
+              <li><a href="#faq" className="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
             </ul>
           </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <span className="text-gray-400">support@bigmumbai.game</span>
+                <span className="text-gray-400">support@bigmumbaiwin.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-red-500 mt-1" />

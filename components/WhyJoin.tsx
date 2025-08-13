@@ -48,7 +48,7 @@ export default function WhyJoin() {
         <div className="text-center mb-16">
           <span className="text-blue-600 font-semibold text-lg">🌟 Member Benefits</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
-            Why Join Our Gaming Community?
+            Play Big Mumbai Games & Earn Real Money
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover the amazing benefits that await you as a Big Mumbai Game member. 

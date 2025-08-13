@@ -54,12 +54,12 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="games" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="text-red-600 font-semibold text-lg">✨ Platform Features</span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">
-            Why Choose Big Mumbai Game?
+            Big Mumbai Games & Features
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Experience the ultimate gaming platform designed for Indian players. 
