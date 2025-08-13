@@ -194,10 +194,21 @@ export default function BlogsPage() {
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-center">
-                    <div className="text-6xl mb-4">🎮</div>
-                    <h4 className="text-xl font-bold text-white mb-2">Featured Article</h4>
-                    <p className="text-blue-100">Essential reading for all Big Mumbai Game players</p>
+                  {/* Featured Blog Thumbnail Image */}
+                  <div className="relative w-full h-64 lg:h-80 rounded-2xl overflow-hidden shadow-2xl">
+                    <Image
+                      src={featuredBlog.image}
+                      alt={`${featuredBlog.title} - Featured Blog Post`}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                      quality={90}
+                    />
+                    <div className="absolute top-3 right-3">
+                      <div className="bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full">
+                        Featured
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
                 </div>
               </div>
