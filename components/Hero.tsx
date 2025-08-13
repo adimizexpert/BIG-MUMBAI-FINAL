@@ -62,7 +62,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         {/* Hero Image at the Top */}
-        <div className="mb-12">
+        <div className="mb-16">
           <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl mx-auto max-w-4xl">
             <Image
               src="/images/glamorous-woman-big-mumbai-game.jpeg"
@@ -74,51 +74,54 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             
-            {/* Floating Elements */}
+            {/* Main Title Overlay on Image */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-2xl text-center px-4">
+                <span className="text-yellow-400">BIG MUMBAI GAME</span>
+              </h1>
+            </div>
+
+            {/* Trending Badge - Properly positioned */}
             <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
               🔥 Trending
             </div>
           </div>
         </div>
 
-        {/* Text Content Below Image */}
+        {/* Content Section with Better Spacing */}
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-bold mb-8">
-            <span className="text-yellow-400 drop-shadow-lg">BIG MUMBAI GAME</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
             Experience the ultimate gaming platform where every second brings excitement and rewards!
           </p>
 
-          {/* Stats Grid */}
-          <div className="grid grid-cols-3 gap-6 mb-8">
+          {/* Stats Grid with Better Spacing */}
+          <div className="grid grid-cols-3 gap-8 mb-16">
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-red-600 rounded-full mx-auto mb-2">
-                <Users className="w-6 h-6 text-white" />
+              <div className="flex items-center justify-center w-16 h-16 bg-red-600 rounded-full mx-auto mb-4">
+                <Users className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white">500K+</div>
+              <div className="text-2xl font-bold text-white mb-2">500K+</div>
               <div className="text-sm text-gray-400">Active Players</div>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full mx-auto mb-2">
-                <Play className="w-6 h-6 text-white" />
+              <div className="flex items-center justify-center w-16 h-16 bg-green-600 rounded-full mx-auto mb-4">
+                <Play className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white">100+</div>
+              <div className="text-2xl font-bold text-white mb-2">100+</div>
               <div className="text-sm text-gray-400">Games</div>
             </div>
             <div className="text-center">
-              <div className="flex items-center justify-center w-12 h-12 bg-yellow-600 rounded-full mx-auto mb-2">
-                <Trophy className="w-6 h-6 text-white" />
+              <div className="flex items-center justify-center w-16 h-16 bg-yellow-600 rounded-full mx-auto mb-4">
+                <Trophy className="w-8 h-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white">₹10L+</div>
+              <div className="text-2xl font-bold text-white mb-2">₹10L+</div>
               <div className="text-sm text-gray-400">Rewards Given</div>
             </div>
           </div>
 
-          {/* Full Width CTA Buttons - Prominently Visible */}
-          <div className="w-full mb-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+          {/* Prominent CTA Buttons - Well Spaced */}
+          <div className="w-full mb-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
               <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button 
                   size="lg" 
@@ -141,7 +144,7 @@ export default function Hero() {
       </div>
 
       {/* Welcome Banner */}
-      <div className="bg-gradient-to-r from-orange-600 to-orange-700 py-6 relative z-10">
+      <div className="bg-gradient-to-r from-orange-600 to-orange-700 py-8 relative z-10">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Welcome To Big Mumbai Game
@@ -150,28 +153,28 @@ export default function Hero() {
       </div>
 
       {/* Informational Text Section */}
-      <div className="py-16 bg-gray-900 relative z-10">
+      <div className="py-20 bg-gray-900 relative z-10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-gray-300">
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 leading-relaxed">
               <strong className="text-yellow-400">Big Mumbai Game</strong> is an online Gaming Platform to win rewards in every second. 
               We provide multiple bonuses and commission on every referral.
             </p>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 leading-relaxed">
               Our platform provides predictions that can help in winning possibility. We offer various games like 
               <strong className="text-green-400"> Lottery, Casino, Fishing and Aviator</strong> etc.
             </p>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl mb-8 leading-relaxed">
               <strong className="text-blue-400">Big Mumbai Game</strong> also Provide Video Tutorial That can help to play the game safely.
             </p>
-            <p className="text-lg md:text-xl mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl mb-12 leading-relaxed">
               It's an <strong className="text-yellow-400">Online Free Platform</strong>, and you can play without Downloading app, 
               through our official Website. Just follow the Login – Register Link Mention Below.
             </p>
 
-            {/* Mid-Page CTA Buttons - Full Width */}
-            <div className="w-full mb-12">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+            {/* Mid-Page CTA Buttons - Full Width with Better Spacing */}
+            <div className="w-full mb-16">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl mx-auto">
                 <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button 
                     size="lg" 
