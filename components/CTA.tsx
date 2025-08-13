@@ -67,7 +67,7 @@ export default function CTA() {
                 size="lg"
                 className="bg-white text-red-700 hover:bg-gray-100 font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
               >
-                🎮 Register Now & Get ₹500 Bonus!
+                🎮 Register
               </Button>
             </a>
             <Button 

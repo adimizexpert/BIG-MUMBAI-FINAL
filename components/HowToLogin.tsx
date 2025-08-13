@@ -130,7 +130,7 @@ export default function HowToLogin() {
                   size="lg"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
                 >
-                  🎮 Register Now & Get ₹500 Bonus!
+                  🎮 Register
                 </Button>
               </a>
               <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
