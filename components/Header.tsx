@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 const navigation = [
   { name: 'Home', href: '#home' },
+  { name: 'Blogs', href: '/blogs' },
   { name: 'FAQ', href: '#faq' },
   { name: 'Privacy Policy', href: '/privacy-policy' },
   { name: 'Disclaimer', href: '/disclaimer' }
