@@ -61,87 +61,87 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-          {/* Left Column - Text Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="text-6xl md:text-8xl font-bold mb-8">
-              <span className="text-yellow-400 drop-shadow-lg">BIG</span>
-              <br />
-              <span className="text-white drop-shadow-lg">MUMBAI</span>
-              <br />
-              <span className="text-yellow-400 drop-shadow-lg">GAME</span>
-            </h1>
+        {/* Hero Image at the Top */}
+        <div className="mb-12">
+          <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl mx-auto max-w-4xl">
+            <Image
+              src="/images/glamorous-woman-big-mumbai-game.jpeg"
+              alt="Glamorous young woman with long wavy hair wearing shimmering silver top, playing colorful board game with neon lights and disco ball in background - Big Mumbai Game"
+              fill
+              className="object-contain"
+              quality={90}
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              Experience the ultimate gaming platform where every second brings excitement and rewards!
-            </p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-3 gap-6 mb-8">
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-red-600 rounded-full mx-auto mb-2">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">500K+</div>
-                <div className="text-sm text-gray-400">Active Players</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full mx-auto mb-2">
-                  <Play className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">100+</div>
-                <div className="text-sm text-gray-400">Games</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-yellow-600 rounded-full mx-auto mb-2">
-                  <Trophy className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">₹10L+</div>
-                <div className="text-sm text-gray-400">Rewards Given</div>
-              </div>
+            {/* Floating Elements */}
+            <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
+              🔥 Trending
             </div>
+            <div className="absolute bottom-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+              ✅ Verified Safe
+            </div>
+          </div>
+        </div>
 
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+        {/* Text Content Below Image */}
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-6xl md:text-8xl font-bold mb-8">
+            <span className="text-yellow-400 drop-shadow-lg">BIG</span>
+            <br />
+            <span className="text-white drop-shadow-lg">MUMBAI</span>
+            <br />
+            <span className="text-yellow-400 drop-shadow-lg">GAME</span>
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            Experience the ultimate gaming platform where every second brings excitement and rewards!
+          </p>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-3 gap-6 mb-8">
+            <div className="text-center">
+              <div className="flex items-center justify-center w-12 h-12 bg-red-600 rounded-full mx-auto mb-2">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-2xl font-bold text-white">500K+</div>
+              <div className="text-sm text-gray-400">Active Players</div>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full mx-auto mb-2">
+                <Play className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-2xl font-bold text-white">100+</div>
+              <div className="text-sm text-gray-400">Games</div>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center w-12 h-12 bg-yellow-600 rounded-full mx-auto mb-2">
+                <Trophy className="w-6 h-6 text-white" />
+              </div>
+              <div className="text-2xl font-bold text-white">₹10L+</div>
+              <div className="text-sm text-gray-400">Rewards Given</div>
+            </div>
+          </div>
+
+          {/* Full Width CTA Buttons */}
+          <div className="w-full mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button 
                   size="lg" 
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-6 px-8 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
                 >
                   🎮 Login
                 </Button>
               </a>
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
                 <Button 
                   size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 text-lg shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-6 px-8 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
                 >
                   🎯 Register
                 </Button>
               </a>
-            </div>
-          </div>
-
-          {/* Right Column - Hero Image with the glamorous woman */}
-          <div className="relative">
-            <div className="relative w-full h-96 lg:h-[500px] overflow-hidden shadow-2xl">
-              <Image
-                src="/images/glamorous-woman-big-mumbai-game.jpeg"
-                alt="Glamorous young woman with long wavy hair wearing shimmering silver top, playing colorful board game with neon lights and disco ball in background - Big Mumbai Game"
-                fill
-                className="object-contain"
-                quality={90}
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-              
-              {/* Floating Elements */}
-              <div className="absolute top-4 right-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-pulse">
-                🔥 Trending
-              </div>
-              <div className="absolute bottom-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
-                ✅ Verified Safe
-              </div>
             </div>
           </div>
         </div>
@@ -176,24 +176,26 @@ export default function Hero() {
               through our official Website. Just follow the Login – Register Link Mention Below.
             </p>
 
-            {/* Mid-Page CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg" 
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-                >
-                  🎮 Login
-                </Button>
-              </a>
-              <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer">
-                <Button 
-                  size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
-                >
-                  🎯 Register
-                </Button>
-              </a>
+            {/* Mid-Page CTA Buttons - Full Width */}
+            <div className="w-full mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                  >
+                    🎮 Login
+                  </Button>
+                </a>
+                <a href="https://www.bigmumbaij.com/#/register?invitationCode=54147218367" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button 
+                    size="lg"
+                    className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-6 px-12 text-xl shadow-2xl transform hover:scale-105 transition-all duration-300 border-0"
+                  >
+                    🎯 Register
+                  </Button>
+                </a>
+              </div>
             </div>
 
             {/* Gift Code Section */}

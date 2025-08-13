@@ -30,7 +30,7 @@ export default function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-black/95 backdrop-blur-md shadow-lg border-b border-gray-700' 
-        : 'bg-transparent'
+        : 'bg-black/80 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -86,12 +86,12 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md transition-colors duration-200"
+            className="lg:hidden p-2 rounded-md transition-colors duration-200 text-white hover:bg-white/10"
           >
             {isMenuOpen ? (
-              <X className={`w-6 h-6 ${isScrolled ? 'text-white' : 'text-white'}`} />
+              <X className="w-6 h-6 text-white" />
             ) : (
-              <Menu className={`w-6 h-6 ${isScrolled ? 'text-white' : 'text-white'}`} />
+              <Menu className="w-6 h-6 text-white" />
             )}
           </button>
         </div>
@@ -104,7 +104,7 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-base font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-200"
+                  className="block text-base font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-200 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
