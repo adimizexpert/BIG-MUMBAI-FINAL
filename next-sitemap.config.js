@@ -39,6 +39,12 @@ module.exports = {
     } else if (path.includes('/disclaimer')) {
       priority = 0.6;
       changefreq = 'monthly';
+    } else if (path.includes('/blogs')) {
+      priority = 0.8;
+      changefreq = 'weekly';
+    } else if (path.includes('/welcome-to-big-mumbai-game')) {
+      priority = 0.7;
+      changefreq = 'weekly';
     }
     
     return {
@@ -46,16 +52,6 @@ module.exports = {
       changefreq: changefreq,
       priority: priority,
       lastmod: new Date().toISOString(),
-      alternateRefs: [
-        {
-          href: `https://bigmumbaiwin.com${path}`,
-          hreflang: 'en-IN',
-        },
-        {
-          href: `https://bigmumbaiwin.com${path}`,
-          hreflang: 'en',
-        },
-      ],
     }
   },
   additionalPaths: async (config) => {
@@ -66,7 +62,8 @@ module.exports = {
       '/privacy-policy',
       '/terms-of-service',
       '/disclaimer',
-      '/blogs'
+      '/blogs',
+      '/welcome-to-big-mumbai-game'
     ];
     
     return additionalPaths.map(path => ({
