@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Play, Users, Trophy, Clock } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface TimeLeft {
   days: number;
@@ -72,30 +72,7 @@ export default function Hero() {
               Login and play exciting color prediction games, win real money, and claim your exclusive welcome bonus and gift codes
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full mx-auto mb-2">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">500K+</div>
-                <div className="text-sm text-gray-400">Active Players</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-green-600 rounded-full mx-auto mb-2">
-                  <Play className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">100+</div>
-                <div className="text-sm text-gray-400">Games</div>
-              </div>
-              <div className="text-center">
-                <div className="flex items-center justify-center w-12 h-12 bg-yellow-600 rounded-full mx-auto mb-2">
-                  <Trophy className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white">₹10L+</div>
-                <div className="text-sm text-gray-400">Rewards Given</div>
-              </div>
-            </div>
+
 
             {/* Countdown Timer */}
             <div className="bg-black/30 backdrop-blur-md rounded-2xl p-6 mb-8">
